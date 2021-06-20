@@ -1,5 +1,6 @@
 const ArticleParser = require("article-parser");
-const HtmlToText = require("html-to-text")
+const HtmlToText = require("html-to-text");
+const fs = require("fs");
 
 const articlesUrls = [
     "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_%C2%AB%D0%93%D0%B5%D0%BD%D0%BE%D0%BC_%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0%C2%BB"
@@ -17,5 +18,10 @@ async function getArticlesContent() {
 }
 
 getArticlesContent().then(articles => {
-    console.log(articles)
+    //console.log(articles)
+    fs.writeFile("article.txt", articles[0], err => {
+        if (err) {
+            throw err;
+        }
+    });
 });
