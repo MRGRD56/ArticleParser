@@ -11,7 +11,16 @@ async function getArticlesContent() {
 
     for (let articleUrl of articlesUrls) {
         const articleData = await ArticleParser.extract(articlesUrls[0]);
-        articlesContents.push(HtmlToText.htmlToText(articleData.content));
+        articlesContents.push(HtmlToText.htmlToText(articleData.content, {
+            selectors: [
+                {
+                    selector: 'a',
+                    options: {
+                        ignoreHref: true
+                    }
+                }
+            ]
+        }));
     }
 
     return articlesContents;
