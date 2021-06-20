@@ -11,7 +11,11 @@
     <li>JavaScript.</li>
  </ul>
 <h4>Демо</h4>
-<p>Демо приложения доступно по адресу: https://github.com/MRGRD56/Qwerty2021/blob/8921f715927d08a77900cbf2a7bdb1603aee115f/demo/demo_1.mp4 </p>
+<p>Демо приложения доступно по следующим адресам: </p>
+<ul>
+    <li>https://github.com/MRGRD56/Qwerty2021/blob/8921f715927d08a77900cbf2a7bdb1603aee115f/demo/demo_1.mp4</li>
+    <li>https://github.com/MRGRD56/ArticleParser/blob/324f270d9b6eb3474322a7bec2a8f68c8c1ca158/demo/demo_2.mp4</li>
+</ul>
 
 СРЕДА ЗАПУСКА
 ------------
